@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gitops-lab-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: gitops-lab
+  template:
+    metadata:
+      labels:
+        app: gitops-lab
+    speck:
+      containers:
+      - name: gitops-lab
+        image: opl6349/gitops-lab:v1
+        ports:
+        - containerPort: 8080
+
