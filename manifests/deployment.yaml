@@ -11,7 +11,7 @@ spec:
     metadata:
       labels:
         app: gitops-lab
-    speck:
+    spec:
       containers:
       - name: gitops-lab
         image: opl6349/gitops-lab:v1
