@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: gitops-lab
-        image: opl6349/gitops-lab:vbroken
+        image: opl6349/gitops-lab:vfixed
         ports:
         - containerPort: 8080
 
